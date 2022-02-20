@@ -4,3 +4,4 @@ numpy
 nltk
 spacy
 Beautifulsoup4
+snowballstemmer
