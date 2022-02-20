@@ -1,0 +1,6 @@
+openpyxl
+pandas
+numpy
+nltk
+spacy
+Beautifulsoup4
