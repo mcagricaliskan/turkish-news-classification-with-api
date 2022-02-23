@@ -92,7 +92,7 @@ class NewsScraper:
 
     def create_excel(self):
         df = pd.DataFrame(data=self.dataset, columns=["Source", "Category", "Link", "Title", "Summary", "Context", "Date"])
-        df.to_excel("Dataset/dataset_20_02_2022.xlsx", index=False)
+        df.to_excel("Dataset/raw_dataset_20_02_2022.xlsx", index=False)
 
     def main(self):
         # Getting news links
@@ -106,8 +106,8 @@ class NewsScraper:
             t.join()
 
         # saving link if any error happens (happend :p)
-        json.dump(self.links_of_news, open("Dataset/link_list.json", "w"))
-        # self.links_of_news = json.load(open("Dataset/link_list.json", "r"))
+        json.dump(self.links_of_news, open("Dataset/news_link_list.json", "w"))
+        # self.links_of_news = json.load(open("Dataset/news_link_list.json", "r"))
 
         # 16 threads at same time (scraping 16 news data same time)
         start_time = time.time()
@@ -121,7 +121,7 @@ class NewsScraper:
         self.create_excel()
         print(f"DONE!!")
         # saving news which giving error 
-        json.dump(self.errors, open("Dataset/errors.json", "w"))
+        json.dump(self.errors, open("Dataset/news_scraping_errors.json", "w"))
         print("Creating Excel File")
 
 
