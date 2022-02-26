@@ -9,3 +9,5 @@ FastAPI
 matplotlib
 seaborn
 tensorflow-gpu==2.8.0
+uvicorn
+Keras
