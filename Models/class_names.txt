@@ -1,0 +1,8 @@
+Automobile
+Living
+Health
+Daily
+Sport
+Technology
+Economy
+Magazine
