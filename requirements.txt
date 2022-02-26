@@ -1,7 +1,11 @@
 openpyxl
 pandas
+Beautifulsoup4
 numpy
 nltk
-spacy
-Beautifulsoup4
-snowballstemmer
+TurkishStemmer
+scikit-learn
+FastAPI
+matplotlib
+seaborn
+tensorflow-gpu==2.8.0
