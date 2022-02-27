@@ -4,10 +4,10 @@ This project is created for learning purposes
 
 # Summary and Steps: 
 
-## Scraper.py:
+## scraper.py:
 I create a web scraper with Beautifulsoup and requests library 
 and try to speed up with multithreading. I saved scraped data to an excel file with using pandas library.
-## ProcessingDataset.ipynb:
+## processing-dataset.ipynb:
 Firstly i tokenized words with regex tokenizer after that i used cleaning steps;
 lowerize words, removing stop words, removing digits, and stemming turkish words.
 When data cleaned i create a tf-idf vectorizer using scikit-learn.
