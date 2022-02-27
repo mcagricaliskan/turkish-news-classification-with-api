@@ -2,12 +2,12 @@ Hello Everyone,
 
 This project is created for learning purposes
 
-# Summary and Steps: 
+# Summary and steps: 
 
 ## scraper.py:
 I create a web scraper with Beautifulsoup and requests library 
 and try to speed up with multithreading. I saved scraped data to an excel file with using pandas library.
-## processing-dataset.ipynb:
+## Processing-Dataset.ipynb:
 Firstly i tokenized words with regex tokenizer after that i used cleaning steps;
 lowerize words, removing stop words, removing digits, and stemming turkish words.
 When data cleaned i create a tf-idf vectorizer using scikit-learn.
@@ -25,7 +25,7 @@ I create a AI class. In AI class i intialize models and data create functions ab
 tf-idf vectorizing on cleaned data, making predictions on vectorized data.
 I initialize AI class and connected it with endpoit for getting news text data from api and returning news class
 ## Dockerfile
-I dockerize API for deploying to my server.
+I dockerized API for deploying to my server.
 ## test_model.py: I copied news from various websites and test model by myself
 making progress
 ## load_test.py: I 
