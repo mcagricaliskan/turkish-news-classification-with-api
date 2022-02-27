@@ -26,6 +26,16 @@ tf-idf vectorizing on cleaned data, making predictions on vectorized data.
 I initialize AI class and connected it with endpoit for getting news text data from api and returning news class
 ## Dockerfile
 I dockerized API for deploying to my server.
+
+For building with docker:
+```
+docker build ./ -t turkish-news-classifier-service
+```
+
+For running docker build 
+```
+docker run -p 10001:10001 turkish-news-classifier-service
+```
 ## test_model.py: I copied news from various websites and test model by myself
 making progress
 ## load_test.py: I 

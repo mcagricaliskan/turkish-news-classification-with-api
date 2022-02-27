@@ -7,6 +7,11 @@ RUN pip install FastAPI
 RUN pip install scikit-learn
 RUN pip install uvicorn
 RUN pip install TurkishStemmer
+RUN pip install nltk
+
+# Initialize for nltk packs
+RUN python -m nltk.downloader stopwords
+RUN python -m nltk.downloader punkt
 
 WORKDIR /app/
 
