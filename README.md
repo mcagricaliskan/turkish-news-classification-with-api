@@ -37,7 +37,7 @@ For running docker build
 docker run -p 10001:10001 turkish-news-classifier-service
 ```
 
-## load_test.py: I 
+## I make load test to api with using soapui 
 I tryed 1000 thread same time and with 60 sec duration, service running with 1 worker and handled 1243 requests in 1 min (min/max/avg is millisecond type)
 ![Load Test](https://github.com/mcagricaliskan/turkish-news-classification/blob/master/README/Screenshot%202022-02-27%20233123.png?raw=true)
 
