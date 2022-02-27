@@ -1,6 +1,6 @@
 Hello Everyone,
 
-This project is coded for learning purposes
+This project is created for learning purposes
 
 # Summary and Steps: 
 
