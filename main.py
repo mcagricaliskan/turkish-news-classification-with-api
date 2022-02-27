@@ -71,5 +71,4 @@ class NewsData(BaseModel):
 def predict_news(news_data: NewsData):
     class_name, probability = classifier.classify(news_data.NewsText)
     response = {"Class": class_name, "Probability": f"{float(probability):.2f}"}
-
     return response

@@ -18,15 +18,15 @@ I load dataset and changed its type to numpy array. For training i split data to
 I set test ratio as %30 of dataset. I shuffled data in spliting process.
 After spliting dataset i create a ANN with Keras and set parameters for training.
 I trained dataset and saved model as h5 file, after the training part
-a create classification report, recall, preccison
+i evaluate model on test set using functions like classification report, recall, preccison
 ## main.py: for api
-
-
-Project Steps:
-- scraper.py: I create a web scraper for one web site to scrap news
-- ProcessingDataset.ipynb: Playing with data and processing it to tf-idf-dataset
-- Train.ipynb: Training tf-idf dataset with different libs
-- app.py: creating a web app with FastAPI for news classifier
-- Dockerfile: Dockerizing web app for deployment
-
-I will share link for trying api
+I create a api end using FastAPI.
+I create a AI class. In AI class i intialize models and data create functions about cleaning incoming text data,
+tf-idf vectorizing on cleaned data, making predictions on vectorized data.
+I initialize AI class and connected it with endpoit for getting news text data from api and returning news class
+## Dockerfile
+I dockerize API for deploying to my server.
+## test_model.py: I copied news from various websites and test model by my self
+making progress
+## load_test.py: I 
+making progress
