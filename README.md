@@ -36,10 +36,59 @@ For running docker build
 ```
 docker run -p 10001:10001 turkish-news-classifier-service
 ```
-## test_model.py: I copied news from various websites and test model by myself
-making progress
 
 ## load_test.py: I 
-
 I tryed 1000 thread same time and with 60 sec duration, service running with 1 worker and handled 1243 requests in 1 min (min/max/avg is millisecond type)
 ![Load Test](https://github.com/mcagricaliskan/turkish-news-classification/blob/master/README/Screenshot%202022-02-27%20233123.png?raw=true)
+
+## test_model.py: I copied news from various websites and test model by myself
+
+I will take some parts of news not full text
+------
+Class: Health - https://www.mynet.com/patlamaya-hazir-bomba-gibi-hissediyorsaniz-bunu-mutlaka-deneyin-ne-dert-kalir-ne-tasa-110106919822 
+Request Body
+```
+{
+	"NewsText": "Sık sık stresli hissediyorsanız ve rahatlamak sizin için zorsa rafine şekeri ve kafeini hayatınızdan çıkararak iyi bir uykuya ilk adımı atabilirsiniz. Rafine şeker ve kafein stres seviyenizi olumsuz olarak etkilediği gibi birçok yiyecek de rahatlamanızı sağlayabilir. Bu yiyeceklerin sinir sistemine olan desteği ve strese karşı direnç sunması yedikten hemen sonra bile iyi hissetmenizi sağlıyor. İşte alışveriş listenize eklemeniz gereken 7 süper yiyecek! KEFİR Yoğurt ve süt arasında bir tadı olan fermente kefir hem stresi azaltıyor hem de bağırsak sistemine inanılmaz fayda sağlıyor. Kefiri evinizde kendiniz yapmak isterseniz bitkisel sütleri de kullanabilirsiniz. Bağırsak sistemini sağlıklı tutmanız uzun vadede stresten uzaklaşmanıza yardımcı olacak!"
+}
+```
+Response
+```
+{
+    "Class": "Health",
+    "Probability": "1.00"
+}
+```
+------
+
+Class: Automobile - https://www.mynet.com/audi-q2-de-yolun-sonuna-geldi-ceo-markus-duesmann-q2-nin-halefi-olmayacak-110106913210
+Request Body
+```
+{
+    "NewsText": "Audi, otomobil modelleri ile piyasada olsa da, zaman zaman diğer pek çok otomobil üreticisi gibi elektriğe dönüş yolunda attığı adımlarla da gündeme geliyor. Audi'nin tek gündemi elektriğe dönüşüm de değil elbet. Şirket, mevcut ürün yelpazesindeki modelleri hakkında da önemli kararlar alıyor ve bu kararlar da konuşuluyor. Otomobil üreticisinin aldığı son karar ise Audi CEO'su Markus Duesmann tarafından açıklanmış durumda. Üstelik bu, sürpriz bir karar olarak değerlendirilebilir gibi görünüyor. AUDI CEO'SU SÜRPRİZ KARARI AÇIKLADI! AUDI A1 VE Q2... Her şey Audi CEO'su Markus Duesmann'ın Alman yayını Handelsblatt'a pazartesi günü yaptığı açıklamaya dayanıyor. Duesmann, açıklamasında Artık A1'i üretmemeye karar verdik ve Q2'nin halefi de olmayacak dedi. Duesmann böylece Audi Q2'nin yeni modelinin gelmeyeceğini doğruladı."
+}
+```
+Response
+```
+{
+    "Class": "Automobile",
+    "Probability": "1.00"
+}
+```
+------
+
+Class: Sport - https://www.mynet.com/domenec-torrent-galibiyet-sonrasi-konustu-meyvelerini-topluyoruz-337530-myspor
+Request Body
+```
+{
+    "NewsText": "Galatasaray Teknik Direktörü Domenec Torrent, Çaykur Rizespor karşılaşmasının ardından açıklamalarda bulundu. Galibiyetle ilgili konuşan Domenec Torrent Güzel bir maç oldu. Bizim çok fazla fırsatımız vardı. Çok pozisyon yakaladık. Onlar da 2 güzel gol attı. Az pozisyonla golleri çıkardılar. Güzel oynadık. 1 ay boyunca antrenman yaptık. Bu 1 ayda kendimizi geliştirdik. Sezon öncesi gibi hazırlık yaptık. Meyvelerini topluyoruz. Maçın sonucundan memnunum. 2 hafta üst üste 3 puan almak güzel dedi. Kadro seçimi ve oyuncu değişiklikleriyle ilgili de açıklama yapan İspanyol teknik adam Bazen hocaların aldığı kararlar, sahayı doğrudan etkiliyor. Bazen kimin girip çıktığı etkilemiyor, bazen etkiliyor. Ben rotasyon yapıyorum. Rotasyonun pozitif etkileri olduğunu düşünüyorum ifadelerini kullandı."
+}
+```
+Response
+```
+{
+    "Class": "Sport",
+    "Probability": "1.00"
+}
+```
+------
