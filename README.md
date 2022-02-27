@@ -38,5 +38,8 @@ docker run -p 10001:10001 turkish-news-classifier-service
 ```
 ## test_model.py: I copied news from various websites and test model by myself
 making progress
+
 ## load_test.py: I 
-making progress
+
+I tryed 1000 thread same time and with 60 sec duration, service running with 1 worker and handled 1243 requests in 1 min
+![Load Test](https://github.com/mcagricaliskan/turkish-news-classification/blob/master/README/Screenshot%202022-02-27%20233123.png?raw=true)
