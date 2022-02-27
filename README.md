@@ -47,6 +47,7 @@ I will take some parts of news not full text
 
 ------
 Class: Health - https://www.mynet.com/patlamaya-hazir-bomba-gibi-hissediyorsaniz-bunu-mutlaka-deneyin-ne-dert-kalir-ne-tasa-110106919822 
+
 Request Body
 ```
 {
@@ -63,6 +64,7 @@ Response
 ------
 
 Class: Automobile - https://www.mynet.com/audi-q2-de-yolun-sonuna-geldi-ceo-markus-duesmann-q2-nin-halefi-olmayacak-110106913210
+
 Request Body
 ```
 {
@@ -79,6 +81,7 @@ Response
 ------
 
 Class: Sport - https://www.mynet.com/domenec-torrent-galibiyet-sonrasi-konustu-meyvelerini-topluyoruz-337530-myspor
+
 Request Body
 ```
 {
