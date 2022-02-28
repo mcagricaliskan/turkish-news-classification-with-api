@@ -20,8 +20,8 @@ After spliting dataset i create a ANN with Keras and set parameters for training
 I trained dataset and saved model as h5 file, after the training part
 i evaluate model on test set using functions like classification report, recall, preccison
 ## main.py: for api
-I create a api end using FastAPI.
-I create a AI class. In AI class i intialize models and data create functions about cleaning incoming text data,
+I create an api endpoint using FastAPI.
+I create an AI class. In AI class i intialize models and data create functions about cleaning incoming text data,
 tf-idf vectorizing on cleaned data, making predictions on vectorized data.
 I initialize AI class and connected it with endpoit for getting news text data from api and returning news class
 ## Dockerfile
