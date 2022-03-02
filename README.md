@@ -4,7 +4,9 @@ This project is created for learning purposes
 
 # Summary and steps: 
 
-## scraper.py:
+- [Scraping News](## Scraping News)
+
+## Scraping News: scraper.py
 I create a web scraper with Beautifulsoup and requests library 
 and try to speed up with multithreading. I saved scraped data to an excel file with using pandas library.
 ## Processing-Dataset.ipynb:
