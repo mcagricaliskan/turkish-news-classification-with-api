@@ -4,12 +4,13 @@ This project is created for learning purposes
 
 # Summary and steps: 
 
-- [Scraping News](##-Scraping-News)
+- [Scraping News](#scraping-news-scraperpy)
+- [Processing News Text and Preparing Dataset]()
 
 ## Scraping News: scraper.py
 I create a web scraper with Beautifulsoup and requests library 
 and try to speed up with multithreading. I saved scraped data to an excel file with using pandas library.
-## Processing-Dataset.ipynb:
+## Processing News Text and Preparing Dataset: Processing-Dataset.ipynb
 Firstly i tokenized words with regex tokenizer after that i used cleaning steps;
 lowerize words, removing stop words, removing digits, and stemming turkish words.
 When data cleaned i create a tf-idf vectorizer using scikit-learn.
