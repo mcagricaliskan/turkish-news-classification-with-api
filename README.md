@@ -4,7 +4,7 @@ This project is created for learning purposes
 
 # Summary and steps: 
 
-- [Scraping News](## Scraping News)
+- [Scraping News](##-Scraping-News)
 
 ## Scraping News: scraper.py
 I create a web scraper with Beautifulsoup and requests library 
