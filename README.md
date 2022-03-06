@@ -46,7 +46,7 @@ If you want to test my api you can use postman or similar tool
 
 Api address: 
 ```
-newsnlp.mcagricaliskan.com/turkish-news-classifier/predict">newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
+newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
 ```
 Method: Post
 Schema: 
