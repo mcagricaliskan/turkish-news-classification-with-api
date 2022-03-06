@@ -44,7 +44,10 @@ I tryed 1000 thread same time and with 60 sec duration, service running with 1 w
 I visit mynet.com and getting some news text for testing my api.
 If you want to test my api you can use postman or similar tool
 
-Api address: <a href="newsnlp.mcagricaliskan.com/turkish-news-classifier/predict">newsnlp.mcagricaliskan.com/turkish-news-classifier/predict</a>
+Api address: 
+```
+newsnlp.mcagricaliskan.com/turkish-news-classifier/predict">newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
+```
 Method: Post
 Schema: 
 ```
