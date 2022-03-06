@@ -48,7 +48,7 @@ Api address:
 ```
 newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
 ```
-Method: Post
+Method: Post </br>
 Schema: 
 ```
 {
