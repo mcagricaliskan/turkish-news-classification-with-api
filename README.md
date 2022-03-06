@@ -8,9 +8,9 @@ I create this project for fun and learning purposes
 - [Processing News Text and Preparing Dataset](#processing-news-text-and-preparing-dataset-processing-datasetipynb)
 - [Training Model and Evaluate Result](#train-model-and-evaluate-result-trainipynb)
 - [Creating API for trained model](#creating-api-for-trained-model-mainpy)
-- [Dockerizing API for Deployment to My Server (I shared API link!)](#dockerizing-api-for-deployment-to-my-server-dockerfile)
+- [Dockerizing API for Deployment to My Server](#dockerizing-api-for-deployment-to-my-server-dockerfile)
 - [Load Test to API with SOAPUI](#load-test-to-api-with-soapui)
-- [Testing Model Myself With News From to Another Website](#testing-model-with-news-from-another-website-including-api-link-which-i-created)
+- [Testing Model Myself With News From to Another Website (I shared API link!)](#testing-model-with-news-from-another-website-including-api-link-which-i-created)
 
 ## Scraping News: scraper.py
 Scraping news text from one website with their categories. Used requests library for getting websites html content, beautifulsoup for processing html content and getting text data, multi threading for speed up to scraping process. Scraped data saved into excel with using pandas library.
