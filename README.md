@@ -56,7 +56,7 @@ Schema:
 }
 ```
 
-Tests
+My test examples:
 
 ------
 Class: Health - https://www.mynet.com/patlamaya-hazir-bomba-gibi-hissediyorsaniz-bunu-mutlaka-deneyin-ne-dert-kalir-ne-tasa-110106919822 
