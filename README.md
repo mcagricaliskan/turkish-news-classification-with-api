@@ -18,7 +18,7 @@ Scraping news text from one website with their categories. Used requests library
 In this notebook i processed news text for training model and saved processors for creating an api. Firstly i cleaned data, in this step i tokenized data, removed stop words, removed digits, removed words shorter then 2 letters and stemming words. After the cleaning part i create a tf-idf vectorizer and fitted with cleaning data and transformed cleaned data to tf-idf vectors.
 ## Train Model and Evaluate Result: Train.ipynb
 I load tf-idf dataset and changed its type to numpy array. For training i split data to train and test (%30 of dataset) parts also shuffled data in spliting process.
-I create a ANN with using Keras and trained network with tf-idf dataset. After training i evaluate model with using classification report and confussion matrix on test set and saved trained model as h5 file for apiç
+I create a ANN with using Keras and trained network with tf-idf dataset. After training i evaluate model with using classification report and confusion matrix on test set and saved trained model as h5 file for apiç
 ## Creating API for trained model: main.py
 I create an AI class for loading model and vectorizer before the starting api also i create data cleaning, processing, tf-idf vectorizing and predicting functions in class.
 After the initializing models code will create an fastapi app and will start service. In every requests endpoints takes news text sending to ai class and returning class and probability of prediciton 
@@ -46,7 +46,7 @@ If you want to test my api you can use postman or similar tool
 
 Api address: 
 ```
-newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
+https://newsnlp.mcagricaliskan.com/turkish-news-classifier/predict
 ```
 Method: Post </br>
 Schema: 
