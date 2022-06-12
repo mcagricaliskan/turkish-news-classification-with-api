@@ -10,4 +10,3 @@ matplotlib
 seaborn
 tensorflow-gpu==2.9.1
 uvicorn
-Keras
