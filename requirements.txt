@@ -8,6 +8,6 @@ scikit-learn
 FastAPI
 matplotlib
 seaborn
-tensorflow-gpu==2.8.0
+tensorflow-gpu==2.9.1
 uvicorn
 Keras
