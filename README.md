@@ -41,7 +41,7 @@ I tryed 1000 thread same time and with 60 sec duration, service running with 1 w
 
 ## Testing Model With News From Another Website (Including api link which i created):
 
-I visit mynet.com and getting some news text for testing my api.
+I get some news from mynet.com for testing my api.
 If you want to test my api you can use postman or similar tool
 
 Api address: 
