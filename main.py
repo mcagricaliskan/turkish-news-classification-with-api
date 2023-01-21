@@ -31,6 +31,7 @@ class Classifier:
         return False
 
     def process_news_text(self, news_text):
+        # process incoming news text, all this steps already used for training dataset too, so, we need to use same steps to incoming news text for prediction
         tokenized_words = self.regex_tokenizer.tokenize(news_text)
         tokenized_words = [word.lower() for word in tokenized_words]
         tokenized_words = [word for word in tokenized_words if word not in self.turkish_stop_words]
@@ -41,10 +42,12 @@ class Classifier:
         return " ".join(tokenized_words)
 
     def get_tf_idf_of_data(self, processed_news_text):
+        # get tf idf vector of incoming preprocessed text
         vector = self.tfidf_vectorizer.transform([processed_news_text])
         return vector.toarray()
 
     def predict_news_class(self, vectorized_news_text):
+        # predict vectorized news text
         prediction = self.model.predict(vectorized_news_text)
         class_number = np.argmax(prediction)
         class_name = self.class_names[class_number]
