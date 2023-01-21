@@ -1,6 +1,7 @@
 Hello Everyone,
 
 I create this project for fun and learning purposes
+If you like and learn something don't forget to give a star!
 
 # Summary and steps: 
 
