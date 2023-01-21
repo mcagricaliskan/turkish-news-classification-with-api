@@ -1,6 +1,6 @@
 Hello Everyone,
 
-I create this project for fun and learning purposes
+I create this project for fun and learning purposes</br>
 If you like and learn something don't forget to give a star!
 
 # Summary and steps: 
