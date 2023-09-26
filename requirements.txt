@@ -8,5 +8,5 @@ scikit-learn
 FastAPI
 matplotlib
 seaborn
-tensorflow-gpu==2.9.1
+tensorflow-gpu==2.12.0
 uvicorn
